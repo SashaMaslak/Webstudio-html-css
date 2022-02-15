@@ -11,7 +11,7 @@
       margin: -4px;
       margin-bottom: 55px;
    }
-   @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
       display: flex;
       justify-content: center;
       margin-bottom: 50px;
@@ -54,7 +54,7 @@
       }
    }
 
-   @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
       padding: 6px 22px;
       background-color: $add-bg-color;
       color: $title-color;
@@ -103,10 +103,14 @@
       flex-direction: column;
       align-items: center;
       margin: -15px;
+      &__is-hidden {
+         position: relative;
+         overflow: hidden;
+      }
    }
-
-   @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       margin: -15px;
       &__is-hidden {
@@ -114,7 +118,6 @@
          overflow: hidden;
       }
    }
-
    @media screen and (min-width: $desktop) {
       display: flex;
       flex-wrap: wrap;
@@ -139,8 +142,8 @@
       position: relative;
    }
 
-   @media screen and (min-width: $tablet) {
-      width: 370px;
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      width: 354px;
       margin: 15px;
       border: 1px solid $border-projects-list;
       position: relative;
@@ -167,7 +170,7 @@
       }
    }
 
-   @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
       display: block;
       width: 100%;
       text-decoration: none;
@@ -197,7 +200,7 @@
       padding: 20px 24px;
    }
 
-   @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
       padding: 20px 24px;
    }
 
@@ -228,7 +231,7 @@
          opacity: 1;
       }
    }
-   @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
       position: absolute;
       top: 0;
       left: 0;
@@ -281,7 +284,7 @@
       letter-spacing: 0.06em;
    }
 
-   @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
       color: $title-color;
       font-size: 18px;
       line-height: 2;
@@ -304,7 +307,7 @@
       letter-spacing: 0.03em;
    }
 
-   @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
       color: $text-color;
       font-size: 16px;
       line-height: 1.86;
