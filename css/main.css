@@ -750,46 +750,48 @@ button {
 
 @media screen and (max-width: 767px) {
   .hero {
-    text-align: center;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    max-width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    text-align: center;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1600px;
-    height: 600px;
+    max-width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    text-align: center;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desktop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1600px;
-    height: 600px;
+    max-width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
   }
