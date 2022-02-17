@@ -1,32 +1,16 @@
 .logo {
-   @media screen and (max-width: 1199px) {
    font-family: $logo-font;
    color: $accent-color;
-   font-weight: 700;
-   font-size: 24px;
-   line-height: 1.17;
-   letter-spacing: 0.03em;
    text-decoration: none;
+   @include Fontstyle(24px, 1.17, 0.03em, 700);
    &--black {
       color: $black-color;
    }
    &--white {
       color: $white-color;
    }
-}
    @media screen and (min-width: $desktop) {
-      font-family: $logo-font;
-      color: $accent-color;
-      font-weight: 700;
       font-size: 26px;
       line-height: 1.19;
-      letter-spacing: 0.03em;
-      text-decoration: none;
-      &--black {
-         color: $black-color;
-      }
-      &--white {
-         color: $white-color;
-      }
    }
 }
