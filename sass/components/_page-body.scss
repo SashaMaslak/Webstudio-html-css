@@ -64,8 +64,6 @@
 }
 
 .works__item {
-   width: 370px;
-   height: 294px;
    position: relative;
    margin: 15px;
 }
@@ -74,7 +72,6 @@
    position: absolute;
    bottom: 0;
    width: 370px;
-   height: 70px;
    background-color: rgba(47, 48, 58, 0.8);
    padding-top: 27px;
    padding-bottom: 27px;
@@ -98,17 +95,6 @@
    }
    
 }
-
-.team__img {
-   margin: 0 auto;
-   width: 450px;
-   @media screen and (min-width: $tablet) {
-      width: 354px;
-   }
-   @media screen and (min-width: $desktop) {
-      width: 270px;
-   }
-} 
 
 .team__item {
    background: $white-color;
@@ -168,7 +154,7 @@
    }
 
    @media screen and (min-width: $desktop) {
-      flex-basis: calc((100% - 360px) / 6);
+      flex-basis: calc((100% - 180px) / 6);
    }
 }
 
@@ -186,12 +172,6 @@
    &:focus {
       color: $accent-color;
       border-color: $accent-color;
-   }
-   @media screen and (min-width: $tablet) {
-      width: 226px;
-   }
-   @media screen and (min-width: $desktop) {
-      width: 170px;
    }
 }
 

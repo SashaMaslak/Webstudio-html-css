@@ -804,8 +804,6 @@ button {
 }
 
 .works__item {
-  width: 370px;
-  height: 294px;
   position: relative;
   margin: 15px;
 }
@@ -814,7 +812,6 @@ button {
   position: absolute;
   bottom: 0;
   width: 370px;
-  height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
@@ -841,21 +838,6 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
     margin: -15px;
-  }
-}
-
-.team__img {
-  margin: 0 auto;
-  width: 450px;
-}
-@media screen and (min-width: 768px) {
-  .team__img {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__img {
-    width: 270px;
   }
 }
 
@@ -937,8 +919,8 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    -ms-flex-preferred-size: calc((100% - 360px) / 6);
-        flex-basis: calc((100% - 360px) / 6);
+    -ms-flex-preferred-size: calc((100% - 180px) / 6);
+        flex-basis: calc((100% - 180px) / 6);
   }
 }
 
@@ -963,16 +945,6 @@ button {
 .clients__link:hover, .clients__link:focus {
   color: #2196f3;
   border-color: #2196f3;
-}
-@media screen and (min-width: 768px) {
-  .clients__link {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients__link {
-    width: 170px;
-  }
 }
 
 .clients__icon {
@@ -1178,18 +1150,6 @@ button {
 }
 
 /* Блок footer - mailup */
-.mailup {
-  width: 100%;
-}
-
-.mailup__form {
-  width: 100%;
-}
-
-.mailup_label {
-  width: 100%;
-}
-
 .mailup__input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1552,6 +1512,7 @@ button {
 }
 .form__checked .form_policy {
   color: #2196f3;
+  margin-left: 4px;
 }
 @media screen and (min-width: 1200px) {
   .form__checked {
@@ -1689,21 +1650,6 @@ button {
 .projects__is-hidden {
   position: relative;
   overflow: hidden;
-}
-
-.projects__img {
-  margin: 0 auto;
-  width: 450px;
-}
-@media screen and (min-width: 768px) {
-  .projects__img {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .projects__img {
-    width: 370px;
-  }
 }
 
 .projects__item {
