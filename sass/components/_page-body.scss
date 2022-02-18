@@ -95,6 +95,13 @@
 
 .team__img {
    margin: 0 auto;
+   width: 450px;
+   @media screen and (min-width: $tablet) {
+      width: 354px;
+   }
+   @media screen and (min-width: $desktop) {
+      width: 270px;
+   }
 } 
 
 .team__item {

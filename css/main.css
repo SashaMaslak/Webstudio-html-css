@@ -825,6 +825,17 @@ button {
 
 .team__img {
   margin: 0 auto;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+  }
 }
 
 .team__item {
@@ -1605,8 +1616,19 @@ button {
   overflow: hidden;
 }
 
-.projects_img {
+.projects__img {
   margin: 0 auto;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .projects__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__img {
+    width: 370px;
+  }
 }
 
 .projects__item {
