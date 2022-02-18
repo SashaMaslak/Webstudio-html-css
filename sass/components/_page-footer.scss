@@ -68,6 +68,7 @@
 
 .mailup__field {
    display: flex;
+   width: 100%;
    flex-direction: column;
    align-items: center;
    @media screen and (min-width: $desktop) {
@@ -120,10 +121,22 @@
 
 /* Блок footer - mailup */
 
+.mailup {
+   width: 100%;
+}
+
+.mailup__form {
+   width: 100%;
+}
+
+.mailup_label {
+   width: 100%;
+}
+
 .mailup__input {
    display: flex;
    align-items: center;
-   width: 450px;
+   max-width: 100%;
    height: 50px;
    padding: 15px;
    font-family: $main-font;
@@ -138,6 +151,9 @@
       color: $white-color;
       border-color: $accent-color;
       outline: none;
+   }
+   @media screen and (min-width: 480px) {
+      width: 450px;
    }
    @media screen and (min-width: $desktop) {
       width: 358px;
