@@ -49,13 +49,11 @@
 }
 
 .hero__title {
-   width: 360px;
    margin: 0 auto;
    color: $white-color;
    text-transform: uppercase;
-   @include Fontstyle(24px, 1.62, 0.06em, 900);
-   @media screen and (min-width: $tablet) {
-      width: 700px;
+   @include Fontstyle(26px, 1.62, 0.06em, 900);
+   @media screen and (min-width: $desktop) {
       font-size: 44px;
       line-height: 1.36;
    }

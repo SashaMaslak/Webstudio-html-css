@@ -12,7 +12,6 @@
    padding-bottom: 5px;
    @media screen and (min-width: $tablet) {
       padding-top: 15px;
-      padding-bottom: 15px;
    }
    @media screen and (min-width: $desktop) {
       padding-top: 22px;
@@ -23,6 +22,7 @@
 .nav {
    display: flex;
    align-items: center;
+
 }
 
 .nav-list {
@@ -88,7 +88,7 @@
       }
       &--current::after {
          content: '';
-         position: absolute;
+         position: fixed;
          bottom: -23px;
          left: 0;
          display: inline-block;
@@ -96,20 +96,21 @@
          height: 4px;
          border-radius: 2px;
          background-color: $accent-color;
+         }
       }
-   }
 }
 
 .contact-list__link {
    @media screen and (max-width: 767px) {
-      text-decoration: none;
       &--color {
          margin-bottom: 32px;
          color: $accent-color;
+         text-decoration: none;
          @include Fontstyle(34px, 1.18, 0.02em, 500);
       }
       &--small {
          color: $text-color;
+         text-decoration: none;
          @include Fontstyle(24px, 1.17, 0.02em, 500);
       }
    }
@@ -178,16 +179,18 @@
    display: none;
 }
 
+.menu-button.is-open .icon-close {
+   display: block;
+   position: absolute;
+   z-index: 2;
+}
+
 .menu-button.is-open {
    display: block;
    position: absolute;
    z-index: 2;
    right: 15px;
    top: 10px;
-}
-
-.menu-button.is-open .icon-close {
-   display: block;
 }
 
 .menu-button.is-open .icon-menu {
@@ -207,7 +210,7 @@
 .menu-container {
    @media screen and (max-width: 767px) {
       display: none;
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
@@ -241,13 +244,7 @@
 }
 
 .soc-list__item {
-   &:not(:last-child) {
-      padding-right: 10px;
-      border-right: 1px solid rgba(33, 33, 33, 0.2);
-   }
-   &:not(:first-child) {
-      padding-left: 10px;
-   }
+
 }
 
 .soc-list__link {

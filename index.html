@@ -66,7 +66,7 @@
                 >
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
-                +38 096 111 11 12
+                +38 096 111 11 11
               </a>
             </li>
           </ul>
@@ -110,7 +110,7 @@
             type="button"
             class="menu-button"
             aria-expanded="false"
-            aria-controls="menu-container is-open"
+            aria-controls="menu-container"
             data-menu-button
           >
             <svg
@@ -128,7 +128,10 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
           <button type="button" class="hero__btn" data-modal-open>
             Заказать услугу
           </button>
@@ -726,8 +729,11 @@
             <use href="./images/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
-        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="form" js-speaker-form autocomplete="off">
+        <p class="modal__title">
+          Оставьте свои данные, мы <br />
+          вам перезвоним
+        </p>
+        <form class="form" autocomplete="off">
           <div class="modal-input-wrap">
             <label for="user-name" class="form__field">Имя</label>
             <input
@@ -781,9 +787,9 @@
               type="checkbox"
               name="policy"
             />
-            <span class="form__check"></span>
-            Соглашаюсь с рассылкой и принимаю
-            <a href="#" class="form_policy">&nbspУсловия договора</a>
+            Соглашаюсь с рассылкой и принимаю<a href="#" class="form_policy"
+              >Условия договора</a
+            >
           </label>
           <button type="submit" class="hero__btn form__btn">Отправить</button>
         </form>

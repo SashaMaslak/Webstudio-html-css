@@ -4,21 +4,24 @@
 
 .filter {
    display: flex;
-   margin: -4px;
+   flex-wrap: wrap;
    margin-bottom: 40px;
-   @media screen and (max-width: $mobile) {
-      flex-wrap: wrap;
-      width: 370px;
-      height: 91px;
-   }
    @media screen and (min-width: $tablet) {
       justify-content: center;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
    }  
+   @media screen and (min-width: $desktop) {
+      justify-content: center;
+      margin-bottom: 50px;
+   }
 }
 
 .filter__item {
-   margin: 4px;
+   margin-right: 8px;
+   margin-bottom: 15px;
+   &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+   }
 }
 
 .filter__btn {
@@ -41,9 +44,11 @@
 /* Проэкты */
 
 .projects {
+   @media screen and (min-width: $tablet) {
    display: flex;
    flex-wrap: wrap;
    margin: -15px;
+}
       &__is-hidden {
          position: relative;
          overflow: hidden;
@@ -62,15 +67,18 @@
 }
 
 .projects__item {
-   width: 450px;
-   margin: 15px;
-   border: 1px solid $border-projects-list;
    position: relative;
+   @media screen and (max-width: $mobile) {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
    @media screen and (min-width: $tablet) {
-      width: 354px;
+      margin: 15px;
+      flex-basis: calc((100% - 60px) / 2);
    }
    @media screen and (min-width: $desktop) {
-      width: 370px;
+      flex-basis: calc((100% - 90px) / 3);
    }
 }
 
@@ -88,6 +96,9 @@
 
 .projects__thumb {
       padding: 20px 24px;
+      border-right: 1px solid $border-projects-list;
+      border-bottom: 1px solid $border-projects-list;
+      border-left: 1px solid $border-projects-list;
 }
 
 .projects__about {
@@ -112,7 +123,7 @@
 
 .projects__title {
       color: $title-color;
-      @include Fontstyle(18px, 2, 0.06em, 400);
+      @include Fontstyle(18px, 2, 0.06em, 700);
 }
 
 .projects__text {

@@ -1,19 +1,22 @@
 /* Оформление Skills */
 
 .skills {
+   @media screen and (min-width: $tablet) {
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
    margin: -15px;
+   }
 }
 
 .skills__item {
-   margin: 15px;
    @media screen and (max-width: $mobile) {
-      width: 450px;
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
    }
-   @media screen and (min-width: $tablet) and (max-width: 1199px) {
+   @media screen and (min-width: $tablet) {
       width: 354px;
+      margin: 15px;
    }
    @media screen and (min-width: $desktop) {
       width: 270px;
@@ -87,10 +90,13 @@
 // Оформление Team
 
 .team {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin: -15px;
+   @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: -15px;
+   }
+   
 }
 
 .team__img {
@@ -105,15 +111,19 @@
 } 
 
 .team__item {
-   width: 450px;
-   margin: 15px;
    background: $white-color;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
    0px 1px 1px rgba(0, 0, 0, 0.14),
    0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
+   @media screen and (max-width: $mobile) {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+}
    @media screen and (min-width: $tablet) {
       width: 354px;
+      margin: 15px;
    }
    @media screen and (min-width: $desktop) {
       width: 270px;
@@ -146,18 +156,19 @@
 .clients {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       margin: -15px;
 }
 
 .clients__item {
-   width: 210px;
+   flex-basis: calc((100% - 60px) / 2);
    margin: 15px;
    @media screen and (min-width: $tablet) {
-      width: 226px;
+      flex-basis: calc((100% - 90px) / 3);
    }
 
    @media screen and (min-width: $desktop) {
-      width: 170px;
+      flex-basis: calc((100% - 360px) / 6);
    }
 }
 
@@ -165,7 +176,6 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 210px;
    height: 92px;
    border: 1px solid $add-color;
    border-radius: 4px;
