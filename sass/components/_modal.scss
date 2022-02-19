@@ -159,7 +159,6 @@
    @include Fontstyle(12px, 1.4, 0.03em, 400);
    & .form_policy {
       color: $accent-color;
-      margin-left: 4px;
    }
    @media screen and (min-width: $desktop) {
       align-items: center;

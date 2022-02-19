@@ -1512,7 +1512,6 @@ button {
 }
 .form__checked .form_policy {
   color: #2196f3;
-  margin-left: 4px;
 }
 @media screen and (min-width: 1200px) {
   .form__checked {
